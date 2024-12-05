@@ -54,10 +54,10 @@ if ingredients_list:
             st.error(f"Error fetching data: {str(e)}")
 
     # Prepare the SQL insert statement
-    my_insert_stmt = f"""
-        INSERT INTO smoothies.public.orders (ingredients, name_on_order)
-        VALUES ('{ingredients_string}', '{name_on_order}')
-    """
+            my_insert_stmt = f"""
+                INSERT INTO smoothies.public.orders (ingredients, name_on_order)
+                VALUES ('{ingredients_string}', '{name_on_order}')
+            """
 
     # Display the button to submit the order
     if st.button('Submit Order', key='submit_button'):
