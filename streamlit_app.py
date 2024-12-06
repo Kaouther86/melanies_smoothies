@@ -25,8 +25,8 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(
 
 # Convert Snowflake DataFrame to Pandas DataFrame
 pd_df = my_dataframe.to_pandas()
-st.dataframe(pd_df)
-st.stop();
+#st.dataframe(pd_df)
+#st.stop();
 # Multiselect for ingredients
 ingredients_list = st.multiselect(
     'Choose up to 5 ingredients:',
